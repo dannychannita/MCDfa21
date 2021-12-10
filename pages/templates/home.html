@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-{% extends 'base.html' %}
+</head>
+
+{% extends "base.html" %}
 
 {% block content %}
-<h1>Homepage</h1>
+<div class="container-fluid">
+    <div class="container-fluid">
+
+        <div class="header text-black text-xl-center">
+            <img src="https://www.potentash.com/wp-content/uploads/2015/11/booksvsmovies.jpg" class="text-center">
+            <h1><strong>Books Vs. Movies</strong></h1>
+            <p>Which told a better story?</p>
+            <p>Join us and find out</p>
+        </div>
+
+        <div>
+            <ol class="breadcrumb">
+                <li class ="breadcrumb-item">
+                    <a href="HomePage.html">Home</a>
+                </li>
+
+                <li class ="breadcrumb-item">
+                    <a href="TeamBioPage.html">Users</a>
+                </li>
+
+                <li class ="breadcrumb-item active">
+                    <a href="#">Current Tab</a>
+
+                </li>
+            </ol>
+        </div>
+
+        <div class="text-center navbar navbar">
+                <a href="HomePage.html" class="btn-primary"><strong>Home</strong></a>
+                <a href="ReviewsPage.html" class="btn-success"><strong>Reviews</strong></a>
+                <a href="TeamBioPage.html" class="btn-info text-white"><strong>Meet the Team</strong></a>
+        </div>
+
+        <div class="row">
+
+            <div class="side container-fluid text-black">
+                <h2><strong>Battle of the Month</strong></h2>
+                <div>
+                    <div>
+                        <img src="https://mvlteenvoice.files.wordpress.com/2018/11/BOOK-VS-MOVIE.png" height="500" width="500">
+                    </div>
+                </div>
+                <br>
+                <p><strong>J.R.R. Tolkien's The Fellowship Of The Ring</strong></p>
+                <p>The first book in Tolkien's beloved trilogy, containing 423 adventure filled pages...</p>
+
+                <br>
+                <p><strong>Peter Jackson's The Fellowship Of The Ring</strong></p>
+                <p>The first movie in Peter Jackson's adaptation of Tolkien's The Lord of The Rings trilogy.
+                    A runtime of 2 hours and 58 minutes for the theatrical version, and a whopping runtime
+                    of 3 hours and 28 minutes for the extended edition. Did this film do Tolkein justice? Read our review!</p>
+                <a href="ReviewsPage.html" class="btn btn-outline-success"><strong>Check out the review here!</strong></a>
+            </div>
+
+            <div class="side container-fluid text-black ">
+                <h2><strong>Upcoming Reviews</strong></h2>
+                <div>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/A1u+2fY5yTL.jpg" height="500" width="500">
+                </div>
+                <br>
+                <p><strong>Frank Herbert's Dune</strong></p>
+                <p>A science fiction novel written by Frank Herbert and published in 1965.</p>
+                <br>
+                <p><strong>The Dune Movies</strong></p>
+                <p>There are currently 2 film adaptations for Frank Herbert's novel. The first Dune movie was
+                    released in 1984. David Lynch wrote the screenplay and directed the film. The second Dune movie was released in 2021
+                    and was directed by Denis Villeneuve. The screenplay was shared among Denis Villeneuve, Eric Roth, and Jon Spaihts</p>
+                <a href="ReviewsPage.html" class="btn btn-outline-success"><strong>Check out the review here!</strong></a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 {% endblock content %}
 
-</head>
 <body>
 
 </body>
+
 </html>
