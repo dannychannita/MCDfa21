@@ -96,7 +96,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Books Vs. Movies</title>
-
 </head>
 
 <body>
@@ -118,14 +117,16 @@
     </div>
 
     <div class="text-center navbar navbar">
-        <a href="home.html" class="btn-primary"><strong>Home</strong></a>
-        <a href="ReviewsPage.html" class="btn-success"><strong>Reviews</strong></a>
-        <a href="about.html" class="btn-info text-white"><strong>Meet the Team</strong></a>
+        <a href="{% url 'home' %}" class="btn-primary"><strong>Home</strong></a>
+        <a href="{% url 'reviews' %}" class="btn-success"><strong>Reviews</strong></a>
+        <a href="{% url 'about' %}" class="btn-info text-white"><strong>Meet the Team</strong></a>
     </div>
 
+<div>
 {% block content %}
 
 {% endblock content %}
+</div>
 
 </body>
 
