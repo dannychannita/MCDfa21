@@ -103,11 +103,11 @@
     <div>
         <ol class="breadcrumb">
             <li class ="breadcrumb-item">
-                <a href="home.html">Home</a>
+                <a href="{% url 'home' %}">Home</a>
             </li>
 
             <li class ="breadcrumb-item">
-                <a href="about.html">Users</a>
+                <a href="{% url 'about' %}">Users</a>
             </li>
 
             <li class ="breadcrumb-item active">
@@ -118,9 +118,9 @@
     </div>
 
     <div class="text-center navbar navbar">
-        <a href="home.html" class="btn-primary"><strong>Home</strong></a>
-        <a href="ReviewsPage.html" class="btn-success"><strong>Reviews</strong></a>
-        <a href="about.html" class="btn-info text-white"><strong>Meet the Team</strong></a>
+        <a href="{% url 'home' %}" class="btn-primary"><strong>Home</strong></a>
+        <a href="{% url 'reviews' %}" class="btn-success"><strong>Reviews</strong></a>
+        <a href="{% url 'about' %}" class="btn-info text-white"><strong>Meet the Team</strong></a>
     </div>
 
 {% block content %}
