@@ -2,6 +2,10 @@
 <html lang="en">
 
 {% extends "base.html" %}
+
+<body>
+
+{% block content %}
 <style>
         * {
             box-sizing: border-box;
@@ -259,10 +263,6 @@
         }
 
     </style>
-    <body>
-
-{% block content %}
-
 <div>
 
     <div class="container-fluid">
@@ -414,6 +414,8 @@
     </div>
 
 </div>
+
 {% endblock content %}
+
 </body>
 </html>
